@@ -7,11 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { PageComponent } from './page/page.component';
-import { ContentService } from './shared/services/content.service';
 
 @NgModule({
-  declarations: [AppComponent, PageComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -20,7 +18,7 @@ import { ContentService } from './shared/services/content.service';
     MatCardModule,
     MatToolbarModule,
   ],
-  providers: [ContentService],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
