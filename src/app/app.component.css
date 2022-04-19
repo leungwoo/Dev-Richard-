@@ -1,0 +1,19 @@
+.navbar-brand {
+  font-size: 30px;
+  font-family: cursive;
+  color: gold;
+  font-weight: bold;
+  border-bottom: rgb(21, 201, 183) 1px solid;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: rgb(21, 201, 183);
+  color: gold;
+  border-radius: 5px;
+
+  padding: 5px 10px;
+}
+footer {
+  background-color: gold;
+  border-top: black solid 2px;
+  text-align: center;
+}
