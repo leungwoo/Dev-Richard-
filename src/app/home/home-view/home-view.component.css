@@ -1,0 +1,14 @@
+/* .bodybg-color {
+  background-color: var(--secondary-color);
+} */
+
+/* linear-gradient trick to get the background lighter */
+.bodybg-image {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(/assets/caribbean.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

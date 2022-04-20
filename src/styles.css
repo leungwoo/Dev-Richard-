@@ -1,1 +1,14 @@
 @import "bootstrap/dist/css/bootstrap.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: rgb(11, 244, 236);
+  --secondary-color: #c2b280;
+  --third-color: #35d0c7;
+  --icon-color: rgb(21, 201, 183);
+}
