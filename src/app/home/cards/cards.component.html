@@ -1,14 +1,36 @@
-<div class="flex-container">
-  <div class="card-item">
-    <img
-      class="container-fluid item1"
-      src="assets/photo-1542235222-30e843cb43a1.jpeg"
-    />
+<!-- <div class="card">
+  <div class="card-item" *ngFor="let card of cardImages">
+    <div class="card-title">{{ card.title }}</div>
+    <img class="image-fluid item" [src]="card.image" />
+    <div class="content">
+      <p>{{ card.details }}</p>
+    </div>
   </div>
-  <div class="card-item">
-    <img class="container-fluid item2" src="assets/newbeginnings.jpeg" />
+</div> -->
+
+<!-- <div class="card container" style="width: 18rem">
+  <div class="card-items" *ngFor="let card of cardImages">
+    <img [src]="card.image" class="card-img-top" alt="cardimage" />
+    <div class="card-body">
+      <h5 class="card-title">{{ card.title }}</h5>
+      <p class="card-text">{{ card.details }}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
   </div>
-  <div class="card-item">
-    <img class="container-fluid item3" src="assets/unstoppable.jpeg" />
+</div> -->
+<div class="container-fluid"></div>
+<div class="row">
+  <div *ngFor="let card of cardImages" class="card" style="width: 15rem">
+    <span class="year mt-3"
+      ><h2>{{ card.year }}</h2></span
+    >
+    <img src="{{ card.image }}" class="card-img p-3" alt="{{ card.image }}" />
+    <div class="card-body">
+      <h5 class="card-title">{{ card.title }}</h5>
+      <p class="card-text">
+        {{ card.details }}
+      </p>
+      <button class="btn btn-sm">Read more</button>
+    </div>
   </div>
 </div>

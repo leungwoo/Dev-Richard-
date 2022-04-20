@@ -1,0 +1,9 @@
+.footer {
+  position: sticky;
+  background-color: gold;
+  border-top: black solid 2px;
+  text-align: center;
+  margin-bottom: 0;
+  top: 100%;
+  overflow: hidden;
+}

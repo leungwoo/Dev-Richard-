@@ -1,1 +1,12 @@
+.bodybg-image1 {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(/assets/film.jpeg);
+  background-repeat: no-repeat;
 
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}

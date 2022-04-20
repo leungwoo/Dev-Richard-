@@ -1,0 +1,11 @@
+.bodybg-image2 {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(/assets/web.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150vh;
+  width: 100%;
+}
