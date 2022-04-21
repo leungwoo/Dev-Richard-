@@ -6,12 +6,14 @@ import { HomeViewComponent } from './home-view/home-view.component';
 import { CardsComponent } from './cards/cards.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { SharedModule } from '../shared/shared.module';
+import { AchievementsComponent } from './achievements/achievements.component';
 @NgModule({
   declarations: [
     CoverComponent,
     HomeViewComponent,
     CardsComponent,
     HobbiesComponent,
+    AchievementsComponent,
   ],
   imports: [CommonModule, HomeRoutingModule, SharedModule],
 })
