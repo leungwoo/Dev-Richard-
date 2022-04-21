@@ -1,5 +1,15 @@
-<section class="boxes">
-  <div class="container">
-    <div class="box"></div>
+<div class="flex container">
+  <div class="flex row">
+    <div
+      *ngFor="let crypto of cryptoNews; index as i"
+      class="col-lg-3 mt-2 mb-3"
+    >
+      <div class="box" *ngIf="i < 4">
+        <h5 class="title mb-2">{{ crypto.title }}</h5>
+        <img class="image mb-2" [src]="crypto.urlToImage" width="100%" />
+        <h6 class="content mt-1 mb-3">{{ crypto.description }}</h6>
+        <a class="btn btn-sm" target="_blank" [href]="crypto.url">Read more</a>
+      </div>
+    </div>
   </div>
-</section>
+</div>
