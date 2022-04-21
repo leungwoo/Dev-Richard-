@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ApiserviceService } from 'src/app/apiservice.service';
+import { Article } from '../interfaces/crypto';
 @Component({
   selector: 'app-crypto',
   templateUrl: './crypto.component.html',
-  styleUrls: ['./crypto.component.css']
+  styleUrls: ['./crypto.component.css'],
 })
 export class CryptoComponent implements OnInit {
+  public cryptoNews: Article[] = [];
 
-  constructor() { }
+  constructor(private apiserviceService: ApiserviceService) {}
 
   ngOnInit(): void {
+    this.apiserviceService
+      .getCryptoNews()
+      .subscribe((cryptoNews) => (this.cryptoNews = cryptoNews.articles));
   }
-
 }

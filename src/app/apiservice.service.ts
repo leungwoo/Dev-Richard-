@@ -13,6 +13,7 @@ export class ApiserviceService {
 
   public apiTechUrl =
     'https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=bdf406765a374ca3b3c9c88aaf097343';
+
   constructor(private http: HttpClient) {}
 
   getCryptoNews(): Observable<CryptoNews> {
