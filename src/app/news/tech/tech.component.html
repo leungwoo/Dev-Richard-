@@ -1,1 +1,12 @@
-<p>tech works!</p>
+<div class="flex container">
+  <div class="flex row">
+    <div *ngFor="let tech of techNews; index as i" class="col-lg-3 mt-2 mb-3">
+      <div class="box" *ngIf="i < 4">
+        <h5 class="title mb-2">{{ tech.title }}</h5>
+        <img class="image mb-2" [src]="tech.urlToImage" width="100%" />
+        <h6 class="content mt-1 mb-3">{{ tech.description }}</h6>
+        <a class="btn btn-sm" target="_blank" [href]="tech.url">Read more</a>
+      </div>
+    </div>
+  </div>
+</div>
