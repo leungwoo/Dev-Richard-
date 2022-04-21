@@ -4,8 +4,15 @@ import { HomeRoutingModule } from './home-routing.module';
 import { CoverComponent } from './cover/cover.component';
 import { HomeViewComponent } from './home-view/home-view.component';
 import { CardsComponent } from './cards/cards.component';
+import { HobbiesComponent } from './hobbies/hobbies.component';
+import { SharedModule } from '../shared/shared.module';
 @NgModule({
-  declarations: [CoverComponent, HomeViewComponent, CardsComponent],
-  imports: [CommonModule, HomeRoutingModule],
+  declarations: [
+    CoverComponent,
+    HomeViewComponent,
+    CardsComponent,
+    HobbiesComponent,
+  ],
+  imports: [CommonModule, HomeRoutingModule, SharedModule],
 })
 export class HomeModule {}

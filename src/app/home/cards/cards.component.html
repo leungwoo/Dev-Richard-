@@ -1,36 +1,16 @@
-<!-- <div class="card">
-  <div class="card-item" *ngFor="let card of cardImages">
-    <div class="card-title">{{ card.title }}</div>
-    <img class="image-fluid item" [src]="card.image" />
-    <div class="content">
-      <p>{{ card.details }}</p>
-    </div>
-  </div>
-</div> -->
-
-<!-- <div class="card container" style="width: 18rem">
-  <div class="card-items" *ngFor="let card of cardImages">
-    <img [src]="card.image" class="card-img-top" alt="cardimage" />
-    <div class="card-body">
-      <h5 class="card-title">{{ card.title }}</h5>
-      <p class="card-text">{{ card.details }}</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div> -->
-<div class="container-fluid"></div>
+<div class="container"></div>
 <div class="row">
   <div *ngFor="let card of cardImages" class="card" style="width: 15rem">
     <span class="year mt-3"
-      ><h2>{{ card.year }}</h2></span
+      ><h3>{{ card.year }}</h3></span
     >
     <img src="{{ card.image }}" class="card-img p-3" alt="{{ card.image }}" />
     <div class="card-body">
-      <h5 class="card-title">{{ card.title }}</h5>
+      <h5 class="card-title lead">{{ card.title }}</h5>
       <p class="card-text">
         {{ card.details }}
       </p>
-      <button class="btn btn-sm">Read more</button>
+      <a class="btn btn-sm" [href]="card.url" target="_blank">Read more</a>
     </div>
   </div>
 </div>

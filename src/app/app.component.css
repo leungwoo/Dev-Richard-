@@ -4,6 +4,13 @@
   align-items: center;
 }
 .navbar {
+  transition: background-color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0);
+}
+.navbar-fixed {
+  background-color: rgba(255, 255, 255, 1);
+}
+.navbar {
   border-bottom: 3px solid rgb(21, 201, 183);
 }
 .navbar-brand {

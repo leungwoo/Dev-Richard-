@@ -16,30 +16,35 @@ export class HomeViewComponent implements OnInit, OnDestroy {
   constructor(@Inject(DOCUMENT) private _document: Document) {}
 
   cardImages = [
-    // {
-    //   year: '2006-2015',
-    //   title: 'Track Life',
-    //   image: 'assets/track1.JPG',
-    //   details: 'started from a young age',
-    // },
     {
       year: '2009-2013',
       title: 'Quarry Management Officer',
       image: 'assets/Ministry.JPG',
       details:
-        'First job out of College, Manageing the Quarry operations of Trinidad and Tobago',
+        ' My first job straight out of College, managing the Quarry operations of Trinidad and Tobago.',
+      url: 'https://www.energy.gov.tt/minerals/',
     },
     {
       year: '2012-2018',
       title: 'Network Marketing',
       image: 'assets/OG.JPG',
-      details: 'started from a young age',
+      details:
+        'Built teams of distributors in the commodity industry and forex industry that generate $100s of millions of sales annually.',
+      url: 'https://www.organogold.com/en/',
+    },
+    {
+      year: '2018-2022',
+      title: 'Personal Trainer',
+      image: 'assets/Richardphoto.JPEG',
+      details:
+        'Personal Training people to get into the best health and physique as possible.',
     },
     {
       year: '2019-2022',
-      title: 'Sunglasses Retail Business',
+      title: 'Sunglasses Business',
       image: 'assets/rayban.jpg',
-      details: 'Retail Business selling Rayban sunglasses to the Caribbean',
+      details: 'Retail Business selling Rayban sunglasses to the Caribbean.',
+      url: 'https://www.facebook.com/shopsplurgett',
     },
     // {
     //   title: 'Web Developer',
