@@ -1,82 +1,21 @@
-<div class="flex container mt-4">
+<div class="container mt-4">
   <app-divider>My Videos</app-divider>
   <div class="row">
-    <div class="col-lg-6">
+    <div class="col-md-6" *ngFor="let v of videos">
       <div class="box">
-        <h3>Pool Project</h3>
+        <h3>{{ v.title }}</h3>
+
         <youtube-player
-          videoId="AokRmam2f1U"
+          videoId="{{ v.video }}"
           suggestedQuality="highres"
           [height]="300"
           [width]="300"
           [startSeconds]="4"
           [endSeconds]="30"
+          class="img-fluid"
         ></youtube-player>
 
-        <h5>Built an in ground pool for florida resident.</h5>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="box">
-        <h3>1st sub 11 in Tobago</h3>
-        <youtube-player
-          videoId="-Nj3YFrxRDs"
-          suggestedQuality="highres"
-          [height]="300"
-          [width]="300"
-          [startSeconds]="4"
-          [endSeconds]="30"
-        ></youtube-player>
-
-        <h5>Ran sub 11 in 100m twice in my career.</h5>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="box">
-        <h3>Squat PR 465lbs</h3>
-        <youtube-player
-          videoId="9yxoAeAjcOs"
-          suggestedQuality="highres"
-          [height]="300"
-          [width]="300"
-          [startSeconds]="4"
-          [endSeconds]="30"
-        ></youtube-player>
-
-        <h5>
-          Took one year of training to move from 315lbs to 465lbs squat PR at
-          170lbs body weight.
-        </h5>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="box">
-        <h3>Volleyball in Texas</h3>
-        <youtube-player
-          videoId="mgFBcb57Mw8"
-          suggestedQuality="highres"
-          [height]="300"
-          [width]="300"
-          [startSeconds]="1"
-          [endSeconds]="30"
-        ></youtube-player>
-        <h5>
-          Volleyball in sand is a different sport! You must try it someday.
-        </h5>
-      </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="box">
-        <h3>My daughter abdominal workout</h3>
-        <youtube-player
-          videoId="zAuR7osiJvc"
-          suggestedQuality="highres"
-          [height]="300"
-          [width]="300"
-          [startSeconds]="1"
-          [endSeconds]="30"
-        ></youtube-player>
-        <h5>Becoming elite is never by accident.</h5>
+        <h5>{{ v.details }}</h5>
       </div>
     </div>
   </div>

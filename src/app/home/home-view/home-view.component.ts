@@ -15,6 +15,15 @@ import { DOCUMENT } from '@angular/common';
 export class HomeViewComponent implements OnInit, OnDestroy {
   constructor(@Inject(DOCUMENT) private _document: Document) {}
 
+  hobbies = [
+    { title: 'Table Tennis', hobbyImage: 'assets/tabletennis.jpeg' },
+    { title: 'Tennis', hobbyImage: 'assets/tennis.jpeg' },
+    { title: 'Gym', hobbyImage: 'assets/squat.jpg' },
+    { title: 'VolleyBall', hobbyImage: 'assets/volleyball.jpeg' },
+    { title: 'Travel', hobbyImage: 'assets/China camel.JPG' },
+    { title: 'Track and Field', hobbyImage: 'assets/track1.JPG' },
+  ];
+
   cardImages = [
     {
       year: '2009-2013',
