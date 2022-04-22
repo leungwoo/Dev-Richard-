@@ -1,6 +1,127 @@
-<p>
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, illum
-  necessitatibus ratione eum ducimus pariatur, ut alias saepe perspiciatis fugit
-  fuga consectetur mollitia ea tempore. Ducimus debitis rem, quisquam vel alias
-  quaerat iure dolorem error rerum veritatis beatae tenetur illo!
-</p>
+<div class="flex container">
+  <div class="row g-4">
+    <div class="col-lg-6">
+      <div
+        class="accordion"
+        id="accordionExample"
+        style="box-shadow: 0px 15px 15px black; border-radius: 10px"
+      >
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Bachelors Degree
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <h3>University of the West Indies</h3>
+              <div class="ul">
+                <li class="item">
+                  <strong>Major in Geography.</strong>
+                </li>
+                <li class="item">
+                  <strong>Minor in Environmental Physics.</strong>
+                </li>
+                <li class="item">
+                  <strong
+                    >Minor in Natural Resources and Environmental
+                    Management.</strong
+                  >
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Specilization Certificate
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >Project Management Principles and Practices
+                Specialization</strong
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Web Development Certificates
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li class="item">
+                  <strong>Interactivity with JavaScript.</strong>
+                </li>
+                <li class="item">
+                  <strong>Introduction to HTML.</strong>
+                </li>
+                <li class="item">
+                  <strong>Introduction to CSS3.</strong>
+                </li>
+                <li class="item">
+                  <strong>Front-End JavaScript Frameworks:Angular</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <!-- <figure class="figure">
+        <img
+          src="assets/student.png"
+          class="figure-img img-fluid rounded"
+          alt="..."
+        />
+        <figcaption class="figure-caption">
+          Continued Education and learning is the way to excel.
+        </figcaption>
+      </figure> -->
+      <div id="map"></div>
+    </div>
+  </div>
+</div>
