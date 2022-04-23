@@ -16,8 +16,8 @@ export class AchievementsComponent implements OnInit {
     const map = new Mapboxgl.Map({
       container: 'map', // container ID
       style: 'mapbox://styles/mapbox/streets-v11', // style URL
-      center: [-61.28797, 10.62153], // starting position [lng, lat]
-      zoom: 7, // starting zoom
+      center: [-61.3995, 10.6416], // starting position [lng, lat]
+      zoom: 15, // starting zoom
     });
   }
 }
