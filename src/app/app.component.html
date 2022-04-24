@@ -76,7 +76,10 @@
 </nav>
 
 <!--Body-->
-<router-outlet></router-outlet>
+<router-outlet>
+  <ngx-loading-bar height="5px" color="var(--icon-color)" diameter="30px">
+  </ngx-loading-bar>
+</router-outlet>
 
 <!--Footer-->
 <app-footer></app-footer>
