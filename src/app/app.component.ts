@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'dev-richard';
   name = '';
-  welcome = '';
 
   constructor() {
     setTimeout(() => {
@@ -23,7 +22,7 @@ export class AppComponent {
       this.name = 'Enjoy my page';
     }, 7000);
     setTimeout(() => {
-      this.name = '< DEV-RICHARD />';
+      this.name = '< Richard Leung Woo-Gabriel />';
     }, 10000);
   }
 }
