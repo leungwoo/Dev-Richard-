@@ -14,6 +14,6 @@ export class CryptoComponent implements OnInit {
   ngOnInit(): void {
     this.apiserviceService
       .getCryptoNews()
-      .subscribe((cryptoNews) => (this.cryptoNews = cryptoNews.articles));
+      .subscribe((response) => (this.cryptoNews = response.articles));
   }
 }

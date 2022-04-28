@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Spinkit } from 'ng-http-loader';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +7,23 @@ import { Spinkit } from 'ng-http-loader';
 })
 export class AppComponent {
   title = 'dev-richard';
-  spinnerStyle = Spinkit;
+  name = '';
+  welcome = '';
+
+  constructor() {
+    setTimeout(() => {
+      this.name = 'Hi';
+    }, 2000);
+
+    setTimeout(() => {
+      this.name = 'Welcome, I am Richard';
+    }, 5000);
+
+    setTimeout(() => {
+      this.name = 'Enjoy my page';
+    }, 7000);
+    setTimeout(() => {
+      this.name = '< DEV-RICHARD />';
+    }, 10000);
+  }
 }
