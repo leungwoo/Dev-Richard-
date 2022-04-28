@@ -11,15 +11,15 @@ export class AppComponent {
 
   constructor() {
     setTimeout(() => {
-      this.name = 'Hi';
+      this.name = 'Hi and Welcome!';
     }, 2000);
 
     setTimeout(() => {
-      this.name = 'Welcome, I am Richard';
+      this.name = 'I am Richard';
     }, 5000);
 
     setTimeout(() => {
-      this.name = 'Enjoy my page';
+      this.name = 'Enjoy the page';
     }, 7000);
     setTimeout(() => {
       this.name = '< Richard Leung Woo-Gabriel />';

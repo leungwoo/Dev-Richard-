@@ -8,6 +8,7 @@ import { CardsComponent } from './cards/cards.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { SharedModule } from '../shared/shared.module';
 import { AchievementsComponent } from './achievements/achievements.component';
+import { ContactComponent } from './contact/contact.component';
 @NgModule({
   declarations: [
     CoverComponent,
@@ -15,6 +16,7 @@ import { AchievementsComponent } from './achievements/achievements.component';
     CardsComponent,
     HobbiesComponent,
     AchievementsComponent,
+    ContactComponent,
   ],
   imports: [
     CommonModule,
