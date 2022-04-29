@@ -4,10 +4,12 @@
       rgba(255, 255, 255, 0.1)
     ),
     url(/assets/film.jpeg);
+  background-position: center;
   background-repeat: repeat;
   background-size: cover;
+  position: relative;
 
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 .box {

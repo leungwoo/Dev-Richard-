@@ -16,9 +16,9 @@ export class NewsHomeComponent implements OnInit, OnDestroy {
   constructor(@Inject(DOCUMENT) private _document: Document) {}
 
   ngOnInit(): void {
-    this._document.body.classList.add('bodybg-image2');
+    this._document.body.classList.add('bodybg-image3');
   }
   ngOnDestroy(): void {
-    this._document.body.classList.remove('bodybg-image2');
+    this._document.body.classList.remove('bodybg-image3');
   }
 }

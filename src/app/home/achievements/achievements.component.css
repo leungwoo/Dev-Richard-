@@ -13,6 +13,7 @@ img {
   width: 100px;
   border-radius: 10px;
 }
+
 .accordion-button:not(.collapsed) {
   color: black;
   background-color: var(--icon-color);
