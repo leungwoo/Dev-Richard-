@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { CoverComponent } from './cover/cover.component';
 import { HomeViewComponent } from './home-view/home-view.component';
 import { CardsComponent } from './cards/cards.component';
@@ -23,6 +25,7 @@ import { ContactComponent } from './contact/contact.component';
     HomeRoutingModule,
     SharedModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
   ],
 })
 export class HomeModule {}
