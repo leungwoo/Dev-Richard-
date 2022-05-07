@@ -8,7 +8,11 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
   public contactDetails = new FormGroup({
-    name: new FormControl('', [Validators.required, Validators.minLength(3)]),
+    name: new FormControl('', [
+      Validators.required,
+      Validators.minLength(3),
+      Validators.pattern(/^[a-z]+$/),
+    ]),
     email: new FormControl('', [Validators.required]),
     phoneNumber: new FormControl('', [Validators.required]),
     message: new FormControl('', [Validators.required]),

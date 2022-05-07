@@ -37,6 +37,12 @@
               >
                 Name must be at least 4 characters long.
               </small>
+              <small
+                class="text-danger"
+                *ngIf="nameControl?.hasError('pattern')"
+              >
+                Only characters letters allowed
+              </small>
             </div>
           </div>
           <!--Email-->
