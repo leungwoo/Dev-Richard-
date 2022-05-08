@@ -9,6 +9,29 @@ import { Router } from '@angular/router';
   encapsulation: ViewEncapsulation.None,
 })
 export class ProjectHomeComponent implements OnInit {
+  public projectWork = [
+    {
+      title: 'Bakery',
+      url: 'https://caribbean-delights.vercel.app/home',
+      image: '/assets/CaribbeanDelight.png',
+    },
+    {
+      title: 'Credit Card Builder',
+      url: 'https://credit-card-project.vercel.app/',
+      image: '/assets/CreditCard.jpeg',
+    },
+    {
+      title: 'API News Website ',
+      url: 'https://github.com/leungwoo/newswebsite.git',
+      image: '/assets/News.jpeg',
+    },
+    {
+      title: 'Fitness App Coming Soon',
+      url: '',
+      image: '/assets/desktop.jpeg',
+    },
+  ];
+
   constructor(
     @Inject(DOCUMENT) private _document: Document,
     private route: Router

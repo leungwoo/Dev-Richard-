@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    display: block;
+    text-align: center;
+  }
+}

@@ -1,44 +1,6 @@
 <div class="container mt-3">
   <app-divider>Projects</app-divider>
-  <div class="row">
-    <div class="col-6">
-      <a href="https://caribbean-delights.vercel.app/home" target="_blank">
-        <div class="card bg-dark text-white">
-          <img
-            src="/assets/CaribbeanDelight.png"
-            class="card-img image-fluid responsive"
-            style="object-fit: cover"
-            alt="Bakery"
-            width="100%"
-            height="auto"
-          />
-          <div class="card-img-overlay">
-            <h4 class="card-title">Bakery</h4>
-            <p class="card-text">Online Bakery</p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-6">
-      <a href="https://credit-card-project.vercel.app/" target="_blank">
-        <div class="card bg-dark text-white">
-          <img
-            src="/assets/CreditCard.jpeg"
-            class="card-img image-fluid responsive"
-            style="object-fit: cover"
-            alt="CreditCard"
-            width="100%"
-            height="auto"
-          />
-          <div class="card-img-overlay">
-            <h4 class="card-title">Credit card Client builder</h4>
-            <p class="card-text"></p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
+  <app-project-work [projectWork]="projectWork"></app-project-work>
   <div>
     <button class="mt-3" (click)="goHome()">
       <i class="bi bi-arrow-left"></i> Back
