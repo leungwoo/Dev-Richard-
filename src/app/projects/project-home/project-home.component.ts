@@ -26,6 +26,11 @@ export class ProjectHomeComponent implements OnInit {
       image: '/assets/News.jpeg',
     },
     {
+      title: 'Email App',
+      url: 'https://email-application.vercel.app/signup',
+      image: '/assets/EmailApp.png',
+    },
+    {
       title: 'Fitness App Coming Soon',
       url: '',
       image: '/assets/desktop.jpeg',
