@@ -31,6 +31,11 @@ export class ProjectHomeComponent implements OnInit {
       image: '/assets/EmailApp.png',
     },
     {
+      title: 'Password Generator',
+      url: 'https://pwg-enerator.vercel.app/passgen1',
+      image: '/assets/PWgen.png',
+    },
+    {
       title: 'Fitness App Coming Soon',
       url: '',
       image: '/assets/desktop.jpeg',

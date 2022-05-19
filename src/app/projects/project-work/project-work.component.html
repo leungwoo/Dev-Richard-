@@ -1,18 +1,19 @@
 <div class="d-flex">
   <div class="row">
-    <div *ngFor="let project of projectWork" class="col-6 mb-3 responsive">
+    <div *ngFor="let project of projectWork" class="project col-6 mb-3 responsive">
       <a href="{{ project.url }}" target="_blank">
-        <div class="card bg-dark text-white">
+        <div class="card bg-dark ">
           <img
             src="{{ project.image }}"
-            class="card-img image-fluid responsive"
+            class="project-img image-fluid responsive"
             style="object-fit: cover"
             alt="Bakery"
             width="100%"
-            height="200px"
+            height="160px"
+            
           />
           <div class="card-img-overlay">
-            <h4 class="card-title">{{ project.title }}</h4>
+            <h4 class="project-title">{{ project.title }}</h4>
             <p class="card-text"></p>
           </div>
         </div>

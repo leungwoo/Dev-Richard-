@@ -24,13 +24,7 @@ button:hover {
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.2);
 }
-.card-img {
-  opacity: 0.3;
-}
 
-.card:hover {
-  box-shadow: 0px 5px 5px var(--icon-color);
-}
-.card-title {
-  text-align: center;
-}
+
+
+

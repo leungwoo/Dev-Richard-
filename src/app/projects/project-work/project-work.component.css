@@ -5,3 +5,20 @@
     text-align: center;
   }
 }
+
+
+.project-title {
+  text-align: center;
+  color:gold
+}
+  /* .project-img {
+  opacity: 0.3;
+}    */
+.project-img{
+  opacity:0.3;
+}
+.project:hover {
+  box-shadow: 0px 5px 5px var(--icon-color);
+  transform: scale(1.02);
+  
+}
